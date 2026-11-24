@@ -44,7 +44,10 @@ Los degradados son el recurso visual principal. Usarlos en fondos, títulos gran
 Reglas:
 - Un degradado protagonista por pieza; el resto, colores planos.
 - Texto sobre degradado: blanco `#F5F8FC` con peso ≥ 600, o sobre una tarjeta semitransparente `rgba(11,19,32,.55)`.
-- Para series en gráficas: cian `#06DBD1` (principal), rosa `#F48FB1` (comparación), azul cielo `#7EC8F2` (tercera), gris `#6B7A90` (contexto).
+- Gráficas con **una sola serie**: línea/barras en cian `#06DBD1`, anotaciones en rosa `#F48FB1`.
+- Gráficas con **varias series** (fondo oscuro), en este orden fijo — validado para daltonismo con el validador de `dataviz`:
+  1. `#0FA8A2` cian  2. `#6A6FF0` azul-violeta  3. `#E05A9E` rosa  · contexto: gris `#6B7A90`.
+  El cian y el rosa **nunca van juntos sin el azul en medio** (se confunden con deuteranopía).
 
 ## Tipografía (Google Fonts)
 - Títulos: **Quicksand** (600–700)
