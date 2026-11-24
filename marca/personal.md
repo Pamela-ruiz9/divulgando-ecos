@@ -44,7 +44,10 @@ Los degradados son el recurso visual principal. Usarlos en fondos, títulos gran
 Reglas:
 - Un degradado protagonista por pieza; el resto, colores planos.
 - Texto sobre degradado: blanco `#F5F8FC` con peso ≥ 600, o sobre una tarjeta semitransparente `rgba(11,19,32,.55)`.
-- Para series en gráficas: cian `#06DBD1` (principal), rosa `#F48FB1` (comparación), azul cielo `#7EC8F2` (tercera), gris `#6B7A90` (contexto).
+- Gráficas con **una sola serie**: línea/barras en cian `#06DBD1`, anotaciones en rosa `#F48FB1`.
+- Gráficas con **varias series** (fondo oscuro), en este orden fijo — validado para daltonismo con el validador de `dataviz`:
+  1. `#0FA8A2` cian  2. `#6A6FF0` azul-violeta  3. `#E05A9E` rosa  · contexto: gris `#6B7A90`.
+  El cian y el rosa **nunca van juntos sin el azul en medio** (se confunden con deuteranopía).
 
 ## Tipografía (Google Fonts)
 - Títulos: **Quicksand** (600–700)
@@ -54,6 +57,14 @@ Reglas:
 ## Motivo gráfico
 **Ondas concéntricas / ecos** con trazo en degradado (Aurora) que se expanden desde un punto, sobre el fondo Profundo; partículas sutiles.
 Avatar: `assets/personal/avatar.png` (ilustración, fondo negro).
+
+Variación del motivo (para que no se vea repetido):
+- Posición: esquina superior derecha, esquina inferior izquierda, o **naciendo de un elemento con significado** (la cifra clave, un punto de la gráfica).
+- Tamaño e intensidad: grande y tenue como fondo, o pequeño y nítido como acento.
+- En reels: las ondas se animan (se expanden) en las transiciones.
+- Regla: el motivo aparece en toda pieza, pero no siempre igual; alternar posiciones entre posts consecutivos.
+
+Firma: **no** poner el usuario de Instagram en las imágenes.
 
 ## Redes
 - Instagram: @ingrid_pameruiz

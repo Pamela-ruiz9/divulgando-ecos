@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&family=JetBrains+Mono:wght@500;700&display=block" rel="stylesheet">
+<style>
+  :root {
+    --fondo: #0B1320; --primario: #023E8A; --cian: #06DBD1; --cielo: #7EC8F2;
+    --rosa: #F48FB1; --rosa-int: #D9488F; --hielo: #CDE1F8; --texto: #F5F8FC; --gris: #8A98AE;
+    --aurora: linear-gradient(120deg, #06DBD1 0%, #7EC8F2 40%, #F48FB1 75%, #D9488F 100%);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { width: 1080px; height: 1350px; overflow: hidden; background: var(--fondo); }
+  .slide {
+    position: relative; width: 1080px; height: 1350px; overflow: hidden;
+    background: linear-gradient(160deg, #0B1320 0%, #0A1D3F 55%, #023E8A 100%);
+    color: var(--texto); font-family: "Nunito Sans", sans-serif;
+    padding: 84px 80px 64px;
+    display: flex; flex-direction: column;
+  }
+  /* motivo: ecos */
+  .ecos { position: absolute; top: -220px; right: -220px; width: 640px; height: 640px; opacity: .55; }
+  .kicker {
+    font-family: "JetBrains Mono", monospace; font-weight: 700; font-size: 24px;
+    letter-spacing: .18em; color: var(--cian);
+  }
+  h1 {
+    font-family: "Quicksand", sans-serif; font-weight: 700; font-size: 84px; line-height: 1.02;
+    margin-top: 22px; max-width: 820px; letter-spacing: -.01em;
+  }
+  h1 .grad { background: var(--aurora); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+  .dato { display: flex; align-items: center; gap: 36px; margin-top: 40px; }
+  .dato .num {
+    font-family: "Quicksand", sans-serif; font-weight: 700; font-size: 150px; line-height: .9;
+    background: var(--aurora); -webkit-background-clip: text; background-clip: text; color: transparent;
+    white-space: nowrap;
+  }
+  .dato .num small { font-size: 64px; }
+  .dato p { font-size: 31px; line-height: 1.3; color: var(--hielo); }
+  .dato p b { color: var(--texto); }
+
+  .grafica {
+    margin-top: 34px; background: rgba(11,19,32,.55); border: 1px solid rgba(205,225,248,.14);
+    border-radius: 28px; padding: 30px 34px 22px;
+  }
+  .grafica h2 { font-family: "Quicksand", sans-serif; font-weight: 700; font-size: 30px; }
+  .grafica .ilus { font-size: 20px; color: var(--gris); margin-top: 4px; }
+  svg text { font-family: "Nunito Sans", sans-serif; }
+
+  .tips { margin-top: 32px; display: grid; gap: 18px; }
+  .tip { display: flex; gap: 22px; align-items: center; font-size: 29px; line-height: 1.3; }
+  .tip .n {
+    font-family: "JetBrains Mono", monospace; font-weight: 700; font-size: 26px; color: var(--fondo);
+    background: var(--aurora); border-radius: 999px; min-width: 46px; height: 46px;
+    display: grid; place-items: center; flex-shrink: 0;
+  }
+  .tip b { color: var(--texto); }
+  .tip span.t { color: var(--hielo); }
+
+  footer {
+    margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end;
+    font-size: 18px; color: var(--gris); line-height: 1.4;
+  }
+  footer .firma {
+    font-family: "Quicksand", sans-serif; font-weight: 700; font-size: 26px; color: var(--texto);
+    white-space: nowrap; margin-left: 32px;
+  }
+</style>
+</head>
+<body>
+<section class="slide">
+  <svg class="ecos" viewBox="0 0 640 640" aria-hidden="true">
+    <defs>
+      <linearGradient id="aurora" x1="0" y1="1" x2="1" y2="0">
+        <stop offset="0" stop-color="#06DBD1"/><stop offset=".4" stop-color="#7EC8F2"/>
+        <stop offset=".75" stop-color="#F48FB1"/><stop offset="1" stop-color="#D9488F"/>
+      </linearGradient>
+    </defs>
+    <g fill="none" stroke="url(#aurora)">
+      <circle cx="320" cy="320" r="40"  stroke-width="6"/>
+      <circle cx="320" cy="320" r="100" stroke-width="4" opacity=".85"/>
+      <circle cx="320" cy="320" r="165" stroke-width="3" opacity=".65"/>
+      <circle cx="320" cy="320" r="235" stroke-width="2" opacity=".45"/>
+      <circle cx="320" cy="320" r="310" stroke-width="1.5" opacity=".3"/>
+    </g>
+  </svg>
+
+  <div class="kicker">BLACK FRIDAY · 27 NOV</div>
+  <h1>¿Descuento real o precio <span class="grad">inflado?</span></h1>
+
+  <div class="dato">
+    <div class="num">0<small>/175</small></div>
+    <p>productos con “oferta” estuvieron en su <b>precio más bajo del año</b> el Black Friday 2024. <b>Todos</b> costaron lo mismo o menos en los 6 meses antes o después.</p>
+  </div>
+
+  <div class="grafica">
+    <h2>Así se ve un descuento inflado</h2>
+    <div class="ilus">Ejemplo ilustrativo · precio de un mismo producto</div>
+    <svg viewBox="0 0 852 300" width="852" height="300" role="img"
+         aria-label="Ejemplo ilustrativo: el precio está en 1,000 pesos, sube a 1,400 dos semanas antes y en Black Friday baja a 980 anunciado como 30% de descuento.">
+      <!-- grid -->
+      <g stroke="rgba(205,225,248,.12)" stroke-width="1">
+        <line x1="70" x2="840" y1="40" y2="40"/>
+        <line x1="70" x2="840" y1="130" y2="130"/>
+        <line x1="70" x2="840" y1="220" y2="220"/>
+      </g>
+      <g fill="#8A98AE" font-size="18" text-anchor="end">
+        <text x="58" y="46">$1,400</text>
+        <text x="58" y="136">$1,200</text>
+        <text x="58" y="226">$1,000</text>
+      </g>
+      <g fill="#8A98AE" font-size="18" text-anchor="middle">
+        <text x="110" y="286">Sep</text>
+        <text x="330" y="286">Oct</text>
+        <text x="560" y="286">Nov</text>
+        <text x="780" y="286">Black Friday</text>
+      </g>
+      <!-- precio normal (referencia) -->
+      <line x1="70" x2="840" y1="220" y2="220" stroke="#7EC8F2" stroke-width="2" stroke-dasharray="6 8" opacity=".7"/>
+      <!-- serie: precio -->
+      <polyline fill="none" stroke="#06DBD1" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"
+        points="80,220 200,220 320,220 440,220 560,220 640,40 700,40 760,40 780,229"/>
+      <!-- marcadores -->
+      <circle cx="660" cy="40" r="9" fill="#F48FB1" stroke="#0B1320" stroke-width="3"/>
+      <circle cx="780" cy="229" r="10" fill="#06DBD1" stroke="#0B1320" stroke-width="3"/>
+      <!-- etiquetas -->
+      <text x="604" y="46" fill="#F5F8FC" font-size="21" font-weight="700" text-anchor="end">Lo suben</text>
+      <text x="604" y="72" fill="#CDE1F8" font-size="19" text-anchor="end">2 semanas antes</text>
+      <text x="792" y="186" fill="#F5F8FC" font-size="21" font-weight="700" text-anchor="end">“−30%” = $980</text>
+      <text x="300" y="206" fill="#CDE1F8" font-size="19">precio de siempre</text>
+    </svg>
+  </div>
+
+  <div class="tips">
+    <div class="tip"><div class="n">1</div><span class="t"><b>Revisa el historial de precios</b> antes de comprar: Profeco tiene “Quién es Quién en los Precios”.</span></div>
+    <div class="tip"><div class="n">2</div><span class="t"><b>Compara el precio final</b>, no el porcentaje de descuento.</span></div>
+    <div class="tip"><div class="n">3</div><span class="t"><b>Meses sin intereses no son descuento</b>: pagas lo mismo.</span></div>
+  </div>
+
+  <footer>
+    <div>Fuentes: Which? (Reino Unido), análisis de 175 productos en 8 tiendas,<br>Black Friday 2024, publ. 25-nov-2025 · Profeco.</div>
+  </footer>
+</section>
+</body>
+</html>
