@@ -1,16 +1,9 @@
-import {Composition, AbsoluteFill, interpolate, useCurrentFrame} from "remotion";
+import {Composition} from "remotion";
+import {MexicoEnvejece, DURACION as DUR_MX} from "./reels/MexicoEnvejece";
 
-const Prueba = () => {
-  const f = useCurrentFrame();
-  return (
-    <AbsoluteFill style={{background: "linear-gradient(160deg,#0B1320,#023E8A)", justifyContent: "center", alignItems: "center"}}>
-      <div style={{color: "#F5F8FC", fontSize: 90, fontFamily: "sans-serif", opacity: interpolate(f, [0, 20], [0, 1], {extrapolateRight: "clamp"})}}>
-        Divulgando Ecos
-      </div>
-    </AbsoluteFill>
-  );
-};
-
+// Reels verticales 1080×1920 a 30 fps. Agrega aquí cada reel nuevo.
 export const Raiz = () => (
-  <Composition id="Prueba" component={Prueba} durationInFrames={45} fps={30} width={1080} height={1920} />
+  <>
+    <Composition id="MexicoEnvejece" component={MexicoEnvejece} durationInFrames={DUR_MX} fps={30} width={1080} height={1920} />
+  </>
 );
