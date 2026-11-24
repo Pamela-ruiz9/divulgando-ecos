@@ -58,6 +58,14 @@ Reglas:
 **Ondas concéntricas / ecos** con trazo en degradado (Aurora) que se expanden desde un punto, sobre el fondo Profundo; partículas sutiles.
 Avatar: `assets/personal/avatar.png` (ilustración, fondo negro).
 
+Variación del motivo (para que no se vea repetido):
+- Posición: esquina superior derecha, esquina inferior izquierda, o **naciendo de un elemento con significado** (la cifra clave, un punto de la gráfica).
+- Tamaño e intensidad: grande y tenue como fondo, o pequeño y nítido como acento.
+- En reels: las ondas se animan (se expanden) en las transiciones.
+- Regla: el motivo aparece en toda pieza, pero no siempre igual; alternar posiciones entre posts consecutivos.
+
+Firma: **no** poner el usuario de Instagram en las imágenes.
+
 ## Redes
 - Instagram: @ingrid_pameruiz
 - LinkedIn: /in/pamela-ruíz-512834231
