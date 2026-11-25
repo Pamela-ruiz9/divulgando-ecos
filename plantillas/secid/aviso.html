@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="secid.css">
+<script src="cubos.js"></script>
+<style>
+  .slide { width: 1080px; height: 1350px; padding: 72px 80px 64px; display: flex; flex-direction: column; }
+  .cubos { position: absolute; bottom: -60px; left: -40px; width: 1160px; height: 420px; opacity: .95; }
+  .logo { width: 132px; height: 132px; margin-left: -18px; }
+  .badge { font-size: 22px; margin-top: 60px; align-self: flex-start; }
+  h1 { font-size: 96px; line-height: 1.02; margin-top: 30px; }
+  h1 em { font-style: normal; color: var(--naranja); }
+  .cuerpo { font-size: 34px; line-height: 1.45; color: var(--crema); margin-top: 36px; max-width: 860px; opacity: .88; }
+  .cuerpo b { color: var(--dorado); font-weight: 600; }
+  .cta { margin-top: 48px; padding: 26px 40px; font-size: 32px; align-self: flex-start; }
+  .cta .url { font-size: 28px; }
+  footer { position: absolute; top: 116px; right: 80px; font-size: 22px; color: var(--gris-osc); text-align: right; line-height: 1.5; }
+</style>
+</head>
+<body>
+<section class="slide">
+  <svg class="cubos" viewBox="0 0 1160 420" aria-hidden="true"></svg>
+  <img class="logo" src="../../assets/secid/logo-secid.png" alt="SECiD">
+  <footer>@secid_unam<br>secid.mx</footer>
+
+  <div class="badge dorado" data-campo="tipo"></div>
+  <h1 class="titulo" data-campo="titulo"></h1>
+  <p class="cuerpo" data-campo="cuerpo"></p>
+  <div class="cta" data-bloque><span data-campo="cta" data-opcional></span><span class="url" data-campo="url"></span></div>
+</section>
+<script>
+  llenar();
+  cubos(document.querySelector(".cubos"), [
+    {x: 60,   y: 330, r: 22, color: "dorado"},
+    {x: 190,  y: 280, r: 36, color: "pizarra", marco: "dorado"},
+    {x: 340,  y: 320, r: 52, color: "crema"},
+    {x: 520,  y: 260, r: 64, color: "crema", marco: "naranja"},
+    {x: 720,  y: 300, r: 78, color: "naranja"},
+    {x: 920,  y: 230, r: 70, color: "naranja", marco: "pizarra"},
+    {x: 1090, y: 320, r: 84, color: "crema"},
+  ]);
+</script>
+</body>
+</html>
