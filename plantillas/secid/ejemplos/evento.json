@@ -1,0 +1,13 @@
+{
+  "ejemplo": true,
+  "tipo": "JOURNAL CLUB",
+  "titulo": "¿Cómo leer un <em>paper</em> de machine learning sin perderte?",
+  "descripcion": "Sesión abierta para egresados y estudiantes. Trae tus dudas y tu paper favorito.",
+  "ponente": {"iniciales": "NA", "nombre": "Nombre Apellido", "cargo": "Científica de datos · Comisión académica SECiD"},
+  "fecha": "Jueves 4 de diciembre",
+  "hora": "19:00 h (CDMX)",
+  "lugar": "En línea",
+  "lugar_detalle": "Liga al registrarte",
+  "cta": "Regístrate →",
+  "url": "secid.mx/eventos"
+}
