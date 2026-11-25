@@ -10,7 +10,7 @@ link:
 archivos: [mexico-envejece.mp4]
 fuente_reel: reels/src/reels/MexicoEnvejece.jsx
 datos: datos/piramide_mx.csv
-audio: "Sin voz. Agregar música desde la biblioteca de Instagram (sugerencia: instrumental tranquila, lo-fi o piano)."
+audio: "Narración con voz sintética local (Piper, es_AR-daniela-high). Guion: reels/guiones/MexicoEnvejece.json. Opcional: música de fondo desde Instagram a volumen bajo."
 ---
 
 ## Instagram

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "gancho",
+    "texto": "En mil novecientos setenta, casi la mitad de México eran niños. Mira cómo cambia.",
+    "subtitulo": false,
+    "archivo": "voz/MexicoEnvejece/gancho.wav",
+    "duracion": 4.145
+  },
+  {
+    "id": "a2000",
+    "texto": "Para el año dos mil, ya eran un tercio.",
+    "subtitulo": "Para el 2000, ya eran un tercio.",
+    "archivo": "voz/MexicoEnvejece/a2000.wav",
+    "duracion": 2.241
+  },
+  {
+    "id": "a2025",
+    "texto": "Hoy, son uno de cada cuatro.",
+    "subtitulo": "Hoy, son uno de cada cuatro.",
+    "archivo": "voz/MexicoEnvejece/a2025.wav",
+    "duracion": 1.521
+  },
+  {
+    "id": "a2050",
+    "texto": "Y para dos mil cincuenta...",
+    "subtitulo": "Y para 2050…",
+    "archivo": "voz/MexicoEnvejece/a2050.wav",
+    "duracion": 1.37
+  },
+  {
+    "id": "compara",
+    "texto": "habrá casi tantos adultos mayores como niños.",
+    "subtitulo": false,
+    "archivo": "voz/MexicoEnvejece/compara.wav",
+    "duracion": 2.45
+  },
+  {
+    "id": "cierre",
+    "texto": "¿Qué significa esto para las pensiones, la salud y el trabajo? Te leo en comentarios.",
+    "subtitulo": false,
+    "archivo": "voz/MexicoEnvejece/cierre.wav",
+    "duracion": 4.389
+  }
+]

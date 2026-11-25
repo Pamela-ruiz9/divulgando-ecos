@@ -55,8 +55,18 @@ export const Degradado = ({children, style}) => (
   <span style={{background: AURORA, WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent", ...style}}>{children}</span>
 );
 
-export const Fuente = ({children}) => (
-  <div style={{position: "absolute", top: 1590, left: 80, right: 150, fontFamily: FUENTE_TEXTO, fontSize: 26, color: C.gris, lineHeight: 1.4}}>
+export const Fuente = ({children, top = 1590}) => (
+  <div style={{position: "absolute", top, left: 80, right: 150, fontFamily: FUENTE_TEXTO, fontSize: 24, color: C.gris, lineHeight: 1.4}}>
     {children}
+  </div>
+);
+
+// Subtítulo de narración: tarjeta semitransparente centrada (zona segura de IG)
+export const Subtitulo = ({children, top = 1500}) => (
+  <div style={{position: "absolute", top, left: 0, right: 0, display: "flex", justifyContent: "center"}}>
+    <div style={{background: "rgba(11,19,32,.8)", border: "1px solid rgba(205,225,248,.18)", borderRadius: 18,
+      padding: "12px 28px", fontFamily: FUENTE_TEXTO, fontWeight: 700, fontSize: 40, color: C.texto, maxWidth: 900, textAlign: "center"}}>
+      {children}
+    </div>
   </div>
 );

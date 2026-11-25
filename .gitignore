@@ -3,3 +3,5 @@
 .env
 node_modules/
 reels/out/
+.venv-voz/
+voces/

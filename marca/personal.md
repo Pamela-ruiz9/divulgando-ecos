@@ -66,6 +66,11 @@ Variación del motivo (para que no se vea repetido):
 
 Firma: **no** poner el usuario de Instagram en las imágenes.
 
+## Voz (reels)
+- Narración: Piper, voz **es_AR-daniela-high** (local, gratis). Generar con `render/voz.py` a partir de `reels/guiones/<Reel>.json`.
+- Escribir números con letra en el guion ("dos mil cincuenta"); en subtítulos, con cifras.
+- Subtítulos solo cuando la voz dice algo que no está ya escrito en pantalla.
+
 ## Redes
 - Instagram: @ingrid_pameruiz
 - LinkedIn: /in/pamela-ruíz-512834231
