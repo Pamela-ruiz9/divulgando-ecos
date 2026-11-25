@@ -4,7 +4,7 @@ voz: personal
 pilar: México en datos
 formato: reel
 plataformas: [instagram, linkedin]
-estado: en-revision
+estado: listo
 publicar_el: 2026-11-27
 link:
 archivos: [mexico-envejece.mp4]
