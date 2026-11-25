@@ -18,3 +18,14 @@ Dos voces, un mismo flujo:
 3. Al publicar, muévelo a `<voz>/publicados/` y agrega el link en el front matter.
 
 Un mismo tema puede tener versión personal y versión SECID: crea ambos archivos con el mismo slug.
+
+## Videos (reels)
+
+Los `.mp4` no se versionan (están en `.gitignore`): se regeneran desde el código.
+
+```bash
+cd reels
+npx remotion render <IdComposicion> ../<voz>/borradores/<post>/<archivo>.mp4
+```
+
+Para revisarlos, arrastra el `.mp4` a un comentario del PR: GitHub lo reproduce ahí mismo.

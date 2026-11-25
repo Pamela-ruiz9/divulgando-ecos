@@ -5,3 +5,8 @@ node_modules/
 reels/out/
 .venv-voz/
 voces/
+
+# Videos renderizados: se regeneran con Remotion; para revisar, adjuntarlos al PR
+*.mp4
+*.mov
+*.webm
