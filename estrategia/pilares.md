@@ -24,8 +24,19 @@
 1. **2 atemporales + 1 de actualidad** por semana. Los atemporales se producen por adelantado (banco de reserva).
 2. **80/20**: 80 % aporta conocimiento; 20 % tu voz (opinión, carrera, detrás de cámaras).
 3. **Nunca dos posts seguidos del mismo pilar.**
-4. **Toda cifra con fuente**; gráficas ilustrativas rotuladas como tales.
+4. **Toda cifra verificada** (ver sección siguiente); gráficas ilustrativas rotuladas como tales.
 5. **Puente con SECiD**: cuando SECiD tenga evento, se comparte desde la cuenta personal con voz propia y marca "Ecos" (nunca la plantilla SECiD).
+
+## Verificación de datos (no negociable)
+
+No difundimos fake news. Ningún post sale con una cifra que no podamos sustentar.
+
+1. **Fuente oficial o creíble**: INEGI, CONAPO, Banxico, CONEVAL, SHCP, Banco Mundial, ONU, OCDE, artículos revisados por pares. Nada de cifras de memoria, notas virales o fuentes sin autor.
+2. **Código reproducible cuando hay cálculo o gráfica**: los datos se descargan con un script en `datos/scripts/` (vía API o archivo oficial) y las gráficas se generan desde esos datos, no a mano.
+3. **Coherencia**: antes de marcar `listo`, se recalculan las cifras y se comparan con *todo* lo que las menciona (texto IG/LinkedIn, gráfica, guion, narración y subtítulos), incluidos los redondeos ("un tercio", "uno de cada cuatro").
+4. **Citar en el post**: fuente, indicador o tabla, fecha de consulta y script en la sección `## Fuentes` del `post.md`; y fuente visible en la pieza.
+5. **Distinguir**: dato observado vs. estimación vs. proyección; si hay fuentes que difieren (p. ej. CONAPO vs. ONU), anotarlo en `## Notas de verificación`.
+6. **Si no se puede verificar, no se publica** (o se reformula sin la cifra).
 
 ## Propuesta semanal de temas (para la rutina automática)
 
