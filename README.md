@@ -25,7 +25,7 @@ Los `.mp4` no se versionan (están en `.gitignore`): se regeneran desde el códi
 
 ```bash
 cd reels
-npx remotion render <IdComposicion> ../<voz>/borradores/<post>/<archivo>.mp4
+npx remotion render src/index.jsx <IdComposicion> ../<voz>/borradores/<post>/<archivo>.mp4
 ```
 
 Para revisarlos, arrastra el `.mp4` a un comentario del PR: GitHub lo reproduce ahí mismo.
