@@ -1,0 +1,27 @@
+{
+  "_nota": "Configuración del centro de difusión (herramientas/centro.py). Inspirado en social-config.json de watchboard.",
+  "voces": ["personal", "secid"],
+  "estados": ["idea", "borrador", "en-revision", "listo", "publicado", "descartado"],
+  "plataformas": {
+    "instagram": {"seccion": "Instagram", "max_caracteres": 2200, "max_hashtags": 30, "hashtags_recomendados": 6},
+    "linkedin":  {"seccion": "LinkedIn",  "max_caracteres": 3000, "max_hashtags": 10, "hashtags_recomendados": 5},
+    "x":         {"seccion": "X",         "max_caracteres": 280,  "max_hashtags": 2,  "hashtags_recomendados": 2}
+  },
+  "ritmo": {
+    "voz": "personal",
+    "posts_por_semana": 3,
+    "dias": {"lunes": "carrusel", "miercoles": "imagen", "viernes": "reel"},
+    "actualidad_por_semana": 1
+  },
+  "pilares": ["Dinero con datos", "México en datos", "Ciencia curiosa", "Detrás de los datos"],
+  "formatos": ["carrusel", "imagen", "reel", "texto"],
+  "prohibido": {
+    "personal": {
+      "sin_usuarios_en_piezas": true,
+      "marca_ajena": ["#F65425", "#E63D14", "#FF7B52", "#FDB157", "#E89D3F", "Poppins"]
+    },
+    "secid": {
+      "marca_ajena": ["#06DBD1", "#D9488F", "#F48FB1", "Quicksand"]
+    }
+  }
+}

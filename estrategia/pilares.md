@@ -40,6 +40,8 @@ No difundimos fake news. Ningún post sale con una cifra que no podamos sustenta
 
 ## Propuesta semanal de temas (para la rutina automática)
 
+Punto de partida: `python3 herramientas/centro.py --brief` (huecos del calendario, posts de las últimas 2 semanas y desempeño por pilar/formato según las `metricas` de lo publicado).
+
 Cada semana proponer **5–8 temas** para elegir 3, indicando: pilar, formato sugerido, gancho en una línea, fuente principal y si es actualidad o atemporal. Respetar las reglas de arriba considerando lo publicado las 2 semanas anteriores (`personal/publicados/`).
 
 Fechas útiles (actualidad): publicación de inflación INEGI (quincenal), decisiones de tasa de Banxico, aguinaldo (dic), cuesta de enero, declaración anual (abr), Día de Muertos (esperanza de vida), regreso a clases, efemérides científicas.

@@ -10,3 +10,7 @@ voces/
 *.mp4
 *.mov
 *.webm
+
+# Tablero generado por herramientas/centro.py
+centro.html
+reporte.md

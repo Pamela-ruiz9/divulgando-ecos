@@ -1,0 +1,38 @@
+name: Revisar posts
+
+# Juez automático: corre las reglas de herramientas/centro.py en cada PR y en main.
+# Falla si un post en estado `listo` o `publicado` tiene bloqueos
+# (cifras sin fuente, checklist sin marcar, marca mezclada, textos demasiado largos…).
+# El reporte completo (cola + calendario) queda en el resumen del job.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  revisar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+      - name: Juez de posts
+        run: |
+          python herramientas/centro.py --md reporte.md --html centro.html --ci
+      - name: Resumen
+        if: always()
+        run: test -f reporte.md && cat reporte.md >> "$GITHUB_STEP_SUMMARY" || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: centro-de-difusion
+          path: centro.html
+          if-no-files-found: ignore

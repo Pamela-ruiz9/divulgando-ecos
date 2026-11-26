@@ -72,6 +72,6 @@ Firma: **no** poner el usuario de Instagram en las imágenes.
 - Subtítulos solo cuando la voz dice algo que no está ya escrito en pantalla.
 
 ## Redes
-- Instagram: @ingrid_pameruiz
+- Instagram: (usuario fuera del repo a propósito)
 - LinkedIn: /in/pamela-ruíz-512834231
 - Web: https://pamela-ruiz9.github.io

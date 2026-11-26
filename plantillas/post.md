@@ -1,11 +1,19 @@
 ---
 titulo:
 voz: personal   # personal | secid
-plataformas: [linkedin]   # linkedin, x, instagram, blog...
-estado: borrador   # borrador | listo | publicado
-fecha_publicacion:
+pilar:          # Dinero con datos | México en datos | Ciencia curiosa | Detrás de los datos
+formato:        # carrusel | imagen | reel | texto
+tipo:           # atemporal | actualidad
+plataformas: [instagram, linkedin]   # instagram, linkedin, x
+estado: borrador   # idea | borrador | en-revision | listo | publicado | descartado
+publicar_el:    # AAAA-MM-DD
 link:
+archivos: []
+# Al publicar, llena las métricas (a los 7 días): alimentan la propuesta semanal.
+# metricas: {alcance: 0, guardados: 0, compartidos: 0, comentarios: 0}
 ---
+
+<!-- Una sección `## Instagram`, `## LinkedIn` o `## X` por plataforma (el juez revisa longitud y hashtags). -->
 
 ## Gancho
 <!-- Primera línea: qué hace que alguien se detenga -->
