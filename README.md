@@ -54,3 +54,21 @@ python3 herramientas/centro.py --brief                  # huecos + lo reciente +
 
 En cada PR, `.github/workflows/revisar-posts.yml` corre el juez, deja el reporte en el resumen del job
 y falla si un post `listo` tiene bloqueos.
+
+## Herramientas de escritura y comandos de Claude
+
+Adaptadas al español de [instagram-agent-skill](https://github.com/Jakeschincariol/instagram-agent-skill)
+(MIT, ver `herramientas/LICENCIAS.md`). Todo corre local, sin red.
+
+| Herramienta | Para qué |
+|---|---|
+| `herramientas/gancho.py` | Califica y ordena ganchos (16 fórmulas de divulgación en `ganchos.json`) |
+| `herramientas/ritmo.py` | Hoja de ritmo de `reels/guiones/<Reel>.json` (usa la duración real de `voz.json` si existe) |
+| `herramientas/texto.py` | Revisa el texto de Instagram/LinkedIn como se ve en el feed antes de "… más" |
+| `herramientas/humano.py` | Quita invisibles y muletillas de IA; califica qué tan humano suena |
+
+`centro.py` ya corre `texto.py` y `humano.py` sobre cada post.
+
+Comandos para Claude Code (en `.claude/skills/`): `/ecos-semana` (plan y temas),
+`/ecos-reel` (guion), `/ecos-carrusel`, `/ecos-texto` (captions) y `/ecos-humano`.
+Ninguno publica: escriben, y tú publicas.

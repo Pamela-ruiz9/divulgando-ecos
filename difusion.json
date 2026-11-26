@@ -3,7 +3,7 @@
   "voces": ["personal", "secid"],
   "estados": ["idea", "borrador", "en-revision", "listo", "publicado", "descartado"],
   "plataformas": {
-    "instagram": {"seccion": "Instagram", "max_caracteres": 2200, "max_hashtags": 30, "hashtags_recomendados": 6},
+    "instagram": {"seccion": "Instagram", "max_caracteres": 2200, "max_hashtags": 30, "hashtags_recomendados": 5},
     "linkedin":  {"seccion": "LinkedIn",  "max_caracteres": 3000, "max_hashtags": 10, "hashtags_recomendados": 5},
     "x":         {"seccion": "X",         "max_caracteres": 280,  "max_hashtags": 2,  "hashtags_recomendados": 2}
   },

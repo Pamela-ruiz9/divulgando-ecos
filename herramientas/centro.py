@@ -30,6 +30,9 @@ from pathlib import Path
 
 import yaml
 
+import humano
+import texto as texto_ig
+
 RAIZ = Path(__file__).resolve().parents[1]
 CONFIG = json.loads((RAIZ / "difusion.json").read_text(encoding="utf-8"))
 DIAS = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]
@@ -185,6 +188,17 @@ def revisar_post(p: Post, hoy: dt.date) -> None:
             add(("bloqueo", f"{cfg['seccion']}: {len(tags)} hashtags (máx. {cfg['max_hashtags']})"))
         elif len(tags) > cfg["hashtags_recomendados"]:
             add(("aviso", f"{cfg['seccion']}: {len(tags)} hashtags (recomendado ≤ {cfg['hashtags_recomendados']})"))
+        # Revisores adaptados de instagram-agent-skill (texto.py y humano.py).
+        if cfg["seccion"] in texto_ig.CORTE:
+            for c in texto_ig.revisar(texto, cfg["seccion"])["checks"]:
+                if c["estado"] != "OK" and c["check"] not in ("LARGO", "HASHTAGS"):
+                    add(("aviso", f"{cfg['seccion']}: {c['check'].lower()}: {c['detalle']}"))
+        h = humano.revisar(texto)
+        if h["invisibles"]:
+            add(("aviso", f"{cfg['seccion']}: caracteres invisibles ({', '.join(h['invisibles'])}); limpia con humano.py"))
+        if h["veredicto"] != "PASA":
+            peor = min(h["senales"], key=h["senales"].get)
+            add(("aviso", f"{cfg['seccion']}: suena poco humano ({h['puntaje']:.0f}/100, flojo en {peor}); corre humano.py"))
         if RE_CIFRA.search(re.sub(r"#\w+", "", texto)):
             hay_cifras = True
             if "fuente" not in texto.lower():

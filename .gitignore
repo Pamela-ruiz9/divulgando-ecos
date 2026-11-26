@@ -14,3 +14,4 @@ voces/
 # Tablero generado por herramientas/centro.py
 centro.html
 reporte.md
+__pycache__/
